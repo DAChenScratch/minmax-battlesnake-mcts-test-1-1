@@ -1,0 +1,7 @@
+from get_condition import evaluate
+data1 = {"game":{"id":"358374","ruleset":{"name":"standard","version":"v.1.2.3"},"timeout":500},"turn":200,"you":{"health":100,"id":"you","name":"#22aa34","body":[{"x":2,"y":3},{"x":2,"y":2},{"x":2,"y":1},{"x":2,"y":0},{"x":3,"y":0}],"head":{"x":2,"y":3},"length":5},"board":{"food":[{"x":4,"y":4}],"height":11,"width":11,"snakes":[{"health":100,"id":"you","name":"#22aa34","body":[{"x":2,"y":3},{"x":2,"y":2},{"x":2,"y":1},{"x":2,"y":0},{"x":3,"y":0}],"head":{"x":2,"y":3},"length":5},{"health":100,"id":"#FFc77f","name":"#FFc77f","body":[{"x":5,"y":4},{"x":6,"y":4},{"x":7,"y":4},{"x":8,"y":4},{"x":9,"y":4},{"x":9,"y":5},{"x":8,"y":5},{"x":8,"y":6},{"x":8,"y":7},{"x":8,"y":8}],"head":{"x":5,"y":4},"length":10}]}}
+
+data2 = {"game":{"id":"160106","ruleset":{"name":"standard","version":"v.1.2.3"},"timeout":500},"turn":200,"you":{"health":100,"id":"you","name":"#22aa34","body":[{"x":0,"y":3},{"x":0,"y":4},{"x":0,"y":5},{"x":0,"y":6}],"head":{"x":0,"y":3},"length":4},"board":{"food":[{"x":0,"y":2},{"x":6,"y":3},{"x":6,"y":0},{"x":3,"y":9},{"x":10,"y":5}],"height":11,"width":11,"snakes":[{"health":100,"id":"you","name":"#22aa34","body":[{"x":0,"y":3},{"x":0,"y":4},{"x":0,"y":5},{"x":0,"y":6}],"head":{"x":0,"y":3},"length":4},{"health":100,"id":"#FF9e09","name":"#FF9e09","body":[{"x":1,"y":2},{"x":1,"y":3},{"x":1,"y":4},{"x":1,"y":5},{"x":1,"y":6},{"x":1,"y":7}],"head":{"x":1,"y":2},"length":6}]}}
+
+
+print(evaluate(data1, data1['board']['snakes'][1]))
